@@ -5,16 +5,46 @@
   "packages": [
     "python@3.10",
     "poetry@latest",
+    "glibcLocales@latest",
     "sedutil@latest",
-    "postgresql@latest",
+    "bashInteractive@latest",
+    "libpqxx@latest",
+    "python310Packages.psycopg2@latest",
+    "github:nixos/nixpkgs#postgresql^out,dev"
   ],
   "shell": {
     "init_hook": [
-      "echo 'Bonvenon al devbox!' > /dev/null",
+      "echo 'Bonvenon al devbox!'",
+      "poetry shell",
+      "exit",
     ],
     "scripts": {
-      "req": [
-        "poetry add $(sed 's/#.*//' requirements.txt)",
+      "django:pravalorizi": [
+        "poetry install",
+        "echo 'from .dev import *' > pasportaservo/settings/__init__.py",
+        "./manage.py migrate",
+        "./manage.py createsuperuser  # Nur la uzantnomo kaj pasvorto estas deviga",
+      ],
+      "db:pravalorizi": [
+        "initdb",
+        "echo Komenci servon postgresql",
+        "devbox services -q start postgresql 2> /dev/null",
+        "sleep 5",
+        "echo Kreantas rolon $USER",
+        "createuser -s $USER || true",
+        "echo Kreantas datumbazon $USER",
+        "createdb $USER",
+        "echo Kreantas datumbazon pasportaservo",
+        "createdb pasportaservo",
+        "devbox services -q stop postgresql",
+        "echo Pravalorizite",
+      ],
+      "db:forigi": [
+        "devbox services -q stop postgresql 2>/dev/null || true",
+        "read -p 'Ĉu vi certas, ke vi volas forigi la lokan datumbazon? [jes/NE]: ' RESPONDO",
+        "[[ ! $RESPONDO =~ ^[JjYy][Ee][Ss]$ ]] && echo 'Nenio forigitas' && false",
+        "rm -rf \"$PWD/.devbox/virtenv/postgresql/data\"",
+        "echo Sukcese forigitas \"$PWD/.devbox/virtenv/postgresql/data\"",
       ],
       "test": [
         "echo \"Error: no test specified\" && exit 1",

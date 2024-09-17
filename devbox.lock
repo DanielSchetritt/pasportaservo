@@ -1,6 +1,206 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "bashInteractive@latest": {
+      "last_modified": "2024-09-14T17:15:42Z",
+      "resolved": "github:NixOS/nixpkgs/d9d07251f12399413e6d33d5875a6f1994ef75a7#bashInteractive",
+      "source": "devbox-search",
+      "version": "5.2p32",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/k69pyqgx9bzzwr24jg7v0bfiibhs2qmv-bash-interactive-5.2p32",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/hxzv4c3w1vskir74d4jiy3zmshsl2hks-bash-interactive-5.2p32-man",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/bfdnl498mbmdqm2m7k48m7lf86xcfzbz-bash-interactive-5.2p32-dev"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/45lhl7zgl0m3s2d2k9p7a8n33njc26b7-bash-interactive-5.2p32-doc"
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/31nfdjadp6hp3xksm5dhray8ii2c4fvm-bash-interactive-5.2p32-info"
+            }
+          ],
+          "store_path": "/nix/store/k69pyqgx9bzzwr24jg7v0bfiibhs2qmv-bash-interactive-5.2p32"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hfss2yv14awzjkfl66ic14wn7szf5spi-bash-interactive-5.2p32",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/kbzsm55ipkkg0rhvcv1jspksxlhyq58g-bash-interactive-5.2p32-man",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/iz8bcsrk04lvfxilglp8f8r9gsql4gcl-bash-interactive-5.2p32-doc"
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/1bn32i0j547v3g8snzls517ni3qmvksy-bash-interactive-5.2p32-info"
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/z9q9k6fqdl0pli0nsc47n3yqyadhcrh8-bash-interactive-5.2p32-debug"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/1mymikrvcysz5h5slhldl96a8dbgwc83-bash-interactive-5.2p32-dev"
+            }
+          ],
+          "store_path": "/nix/store/hfss2yv14awzjkfl66ic14wn7szf5spi-bash-interactive-5.2p32"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3sqqd155i842l1siikplnq8r864ghvds-bash-interactive-5.2p32",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/fz3fh6fn1zpwgmhy6kfl20sqr6lnw2bv-bash-interactive-5.2p32-man",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/r68n1x2m2p5jrnwrglhavhsf6cs90s0r-bash-interactive-5.2p32-dev"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/5c84cwkm428xl3igh9swc5k2n5yp2z4g-bash-interactive-5.2p32-doc"
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/xf448iq5a3f2nymcp9n1sxd81bhpfwfk-bash-interactive-5.2p32-info"
+            }
+          ],
+          "store_path": "/nix/store/3sqqd155i842l1siikplnq8r864ghvds-bash-interactive-5.2p32"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qqz0gj9iaidabp7g34r2fb9mds6ahk8i-bash-interactive-5.2p32",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/2akqrpqjp48hpbssqbx3cqbwry6kd393-bash-interactive-5.2p32-man",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/641bdn8zynxn6jgfnrnzg2d2lv26124r-bash-interactive-5.2p32-doc"
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/jl87wpmcn0dl9yzkq038lq21fvrfqkcb-bash-interactive-5.2p32-info"
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/vgvpxjhw5fjag0qfl902l12c3amhhpxm-bash-interactive-5.2p32-debug"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/vh3vhwg8s5v1n019svwi6xzrn4jds047-bash-interactive-5.2p32-dev"
+            }
+          ],
+          "store_path": "/nix/store/qqz0gj9iaidabp7g34r2fb9mds6ahk8i-bash-interactive-5.2p32"
+        }
+      }
+    },
+    "glibcLocales@latest": {
+      "last_modified": "2024-09-10T15:01:03Z",
+      "resolved": "github:NixOS/nixpkgs/5ed627539ac84809c78b2dd6d26a5cebeb5ae269#glibcLocales",
+      "source": "devbox-search",
+      "version": "2.39-52",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5ayl9b7pj8s4424sjmvzpak3r3kilf2x-glibc-locales-2.39-52",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5ayl9b7pj8s4424sjmvzpak3r3kilf2x-glibc-locales-2.39-52"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rhjqirbv6p5r6qaiill2k30bqdx84c62-glibc-locales-2.39-52",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rhjqirbv6p5r6qaiill2k30bqdx84c62-glibc-locales-2.39-52"
+        }
+      }
+    },
+    "libpqxx@latest": {
+      "last_modified": "2024-09-10T15:01:03Z",
+      "resolved": "github:NixOS/nixpkgs/5ed627539ac84809c78b2dd6d26a5cebeb5ae269#libpqxx",
+      "source": "devbox-search",
+      "version": "7.7.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/z783gcn6wnnr5z234hxw4f0wflh51kkj-libpqxx-7.7.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/z783gcn6wnnr5z234hxw4f0wflh51kkj-libpqxx-7.7.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/d1bdjdii06pab4m3fgljf7h46k6b2dia-libpqxx-7.7.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/d1bdjdii06pab4m3fgljf7h46k6b2dia-libpqxx-7.7.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/zwvq7vc5z3qsyk8xrb78bm9q2s7aplrm-libpqxx-7.7.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/zwvq7vc5z3qsyk8xrb78bm9q2s7aplrm-libpqxx-7.7.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/31drxmj46mzypyp75viv4mi4527lazn2-libpqxx-7.7.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/31drxmj46mzypyp75viv4mi4527lazn2-libpqxx-7.7.5"
+        }
+      }
+    },
     "poetry@latest": {
       "last_modified": "2024-09-12T11:58:09Z",
       "plugin_version": "0.0.4",
@@ -66,135 +266,90 @@
         }
       }
     },
-    "postgresql@latest": {
-      "last_modified": "2024-09-12T11:58:09Z",
-      "plugin_version": "0.0.2",
-      "resolved": "github:NixOS/nixpkgs/280db3decab4cbeb22a4599bd472229ab74d25e1#postgresql",
+    "python310Packages.psycopg2@latest": {
+      "last_modified": "2023-12-13T22:54:10Z",
+      "resolved": "github:NixOS/nixpkgs/fd04bea4cbf76f86f244b9e2549fca066db8ddff#python310Packages.psycopg2",
       "source": "devbox-search",
-      "version": "16.4",
+      "version": "2.9.7",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/fln3gcl40fwynfjr5fkpyqjhll4jqyhm-postgresql-16.4",
+              "path": "/nix/store/mk1krvz61m94bwrgxq4sx23mch7l3ihn-python3.10-psycopg2-2.9.7",
               "default": true
             },
             {
-              "name": "man",
-              "path": "/nix/store/npkdasdws60qy0j0kznqwnbizcjx5m0q-postgresql-16.4-man",
-              "default": true
+              "name": "dist",
+              "path": "/nix/store/jjapyprwdg3fwi2287ihs2vd33bgb810-python3.10-psycopg2-2.9.7-dist"
             },
             {
               "name": "doc",
-              "path": "/nix/store/akn2wpw56q2cwwpa3kdd4isklaqk375s-postgresql-16.4-doc"
-            },
-            {
-              "name": "lib",
-              "path": "/nix/store/5i4svw3nbn239hhzrl857bkbqb5h1aq1-postgresql-16.4-lib"
-            },
-            {
-              "name": "dev",
-              "path": "/nix/store/63r8cs0kjscq50r93k97aijddx2mjwm9-postgresql-16.4-dev"
+              "path": "/nix/store/ij912gyrx6z5g7w64rgrbp0k6bn00j1z-python3.10-psycopg2-2.9.7-doc"
             }
           ],
-          "store_path": "/nix/store/fln3gcl40fwynfjr5fkpyqjhll4jqyhm-postgresql-16.4"
+          "store_path": "/nix/store/mk1krvz61m94bwrgxq4sx23mch7l3ihn-python3.10-psycopg2-2.9.7"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/7bm8jppsyml2lkzzbw5kg6ahmvwlnxsb-postgresql-16.4",
+              "path": "/nix/store/nwib7r5gpx8gcmkic1sjvwwglvs05jdj-python3.10-psycopg2-2.9.7",
               "default": true
             },
             {
-              "name": "man",
-              "path": "/nix/store/4i96xjnrsxgcpizmr6v7gmc25zminnl2-postgresql-16.4-man",
-              "default": true
-            },
-            {
-              "name": "debug",
-              "path": "/nix/store/w6hs71a695sf2n00km946bb1v36xc2qg-postgresql-16.4-debug"
-            },
-            {
-              "name": "dev",
-              "path": "/nix/store/ycbf1qw3x8wc3a7z6mjwkzmyhc43s2wn-postgresql-16.4-dev"
+              "name": "dist",
+              "path": "/nix/store/46yd6ryxmybcar4mwrnjra3kqjxm26sh-python3.10-psycopg2-2.9.7-dist"
             },
             {
               "name": "doc",
-              "path": "/nix/store/bh5km6cln45kf1pfwahdslpc9cydrm4v-postgresql-16.4-doc"
-            },
-            {
-              "name": "lib",
-              "path": "/nix/store/3crpddg2akfnpg19plbbfyxny13ygdaf-postgresql-16.4-lib"
+              "path": "/nix/store/qy917hhmv21a46zajrq9rz74g7nag8kv-python3.10-psycopg2-2.9.7-doc"
             }
           ],
-          "store_path": "/nix/store/7bm8jppsyml2lkzzbw5kg6ahmvwlnxsb-postgresql-16.4"
+          "store_path": "/nix/store/nwib7r5gpx8gcmkic1sjvwwglvs05jdj-python3.10-psycopg2-2.9.7"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/ywikp0nf87afr4qs2dvjxiknwzyf6n5b-postgresql-16.4",
+              "path": "/nix/store/kkn1kgppbbls0p3a8ch8ifamaxfhpvbz-python3.10-psycopg2-2.9.7",
               "default": true
             },
             {
-              "name": "man",
-              "path": "/nix/store/n66gp6v6zd5fxwh2j72jjx5d427fpibp-postgresql-16.4-man",
-              "default": true
-            },
-            {
-              "name": "dev",
-              "path": "/nix/store/sb23d37zmmymsn268d9lcpgd0j939117-postgresql-16.4-dev"
+              "name": "dist",
+              "path": "/nix/store/s0pz82j9q38wgrrvpiar6j3n0zwfv4zv-python3.10-psycopg2-2.9.7-dist"
             },
             {
               "name": "doc",
-              "path": "/nix/store/ayarhx2gw8y5j648r4jfsl8l54s5nb8i-postgresql-16.4-doc"
-            },
-            {
-              "name": "lib",
-              "path": "/nix/store/k5n25gjgfbxwyjhzf2il0b93q18gdsr7-postgresql-16.4-lib"
+              "path": "/nix/store/n6zzcz8nf1ap4dlzn0cddzflwlpzzq7f-python3.10-psycopg2-2.9.7-doc"
             }
           ],
-          "store_path": "/nix/store/ywikp0nf87afr4qs2dvjxiknwzyf6n5b-postgresql-16.4"
+          "store_path": "/nix/store/kkn1kgppbbls0p3a8ch8ifamaxfhpvbz-python3.10-psycopg2-2.9.7"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/1gax5xs6h1b70gk7z274kx4qh04hsn96-postgresql-16.4",
+              "path": "/nix/store/nfqwlh2j3rf5sl0hjgivr30a3mkqjhvg-python3.10-psycopg2-2.9.7",
               "default": true
             },
             {
-              "name": "man",
-              "path": "/nix/store/43pzfj4xv6r022jmnmx2n648ycqy8rhx-postgresql-16.4-man",
-              "default": true
-            },
-            {
-              "name": "debug",
-              "path": "/nix/store/isrqqmd5ckwwsgk708q981h3h7ijixkv-postgresql-16.4-debug"
-            },
-            {
-              "name": "dev",
-              "path": "/nix/store/45if5nl708nhayxnaqh7h2scz9pn4mn8-postgresql-16.4-dev"
+              "name": "dist",
+              "path": "/nix/store/z7rr64z51zycpjir8psyaw3ndg10dc7q-python3.10-psycopg2-2.9.7-dist"
             },
             {
               "name": "doc",
-              "path": "/nix/store/plf9diy9a5l5fmfl8pvlgmpxkc3ixhb3-postgresql-16.4-doc"
-            },
-            {
-              "name": "lib",
-              "path": "/nix/store/l54jqbzqhghvy3g9kqhmcha9z3vzzrxr-postgresql-16.4-lib"
+              "path": "/nix/store/4ciypm3b3rq8akaaiw2wyy174qnwrgln-python3.10-psycopg2-2.9.7-doc"
             }
           ],
-          "store_path": "/nix/store/1gax5xs6h1b70gk7z274kx4qh04hsn96-postgresql-16.4"
+          "store_path": "/nix/store/nfqwlh2j3rf5sl0hjgivr30a3mkqjhvg-python3.10-psycopg2-2.9.7"
         }
       }
     },
     "python@3.10": {
-      "last_modified": "2024-09-12T11:58:09Z",
+      "last_modified": "2024-09-12T02:28:40Z",
       "plugin_version": "0.0.3",
-      "resolved": "github:NixOS/nixpkgs/280db3decab4cbeb22a4599bd472229ab74d25e1#python310",
+      "resolved": "github:NixOS/nixpkgs/111ed8812c10d7dc3017de46cbf509600c93f551#python310",
       "source": "devbox-search",
       "version": "3.10.15",
       "systems": {

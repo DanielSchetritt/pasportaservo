@@ -1,0 +1,24 @@
+// devbox.json enhavas agordojn por rekreebla programada medio. https://www.jetify.com/devbox/docs/
+// Tiu ĉi speco de JSON estas HuJSON kaj permesas komentojn. https://github.com/tailscale/hujson
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
+  "packages": [
+    "python@3.10",
+    "poetry@latest",
+    "sedutil@latest",
+    "postgresql@latest",
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Bonvenon al devbox!' > /dev/null",
+    ],
+    "scripts": {
+      "req": [
+        "poetry add $(sed 's/#.*//' requirements.txt)",
+      ],
+      "test": [
+        "echo \"Error: no test specified\" && exit 1",
+      ],
+    },
+  },
+}

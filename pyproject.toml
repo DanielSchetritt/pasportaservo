@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pasportaservo"
+version = "1.0.0"
+description = "Pasporta Servo estas senpaga tutmonda gastiga servo."
+authors = ["TEJO <oficejo@tejo.org>"]
+license = "GNU AGPLv3"
+readme = "README.md"
+package-mode = false
+homepage = "https://www.pasportaservo.org/"
+repository = "https://github.com/tejoesperanto/pasportaservo"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+dephell = "^0.8.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
